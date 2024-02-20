@@ -1,0 +1,18 @@
+# sol_usdc交易对
+
+api_key: "1hfiGFKUZE5MX9NjGkSFBjLKVR6vSh4UIswOLJfx6j0="
+api_secret: "0Ldf8bJKZF5BpQinPcyaf2bMDdEoI78Ln2CazRPanMs="
+
+# 订单类型 (只针对买单，卖单统一走市价，防止持有sol下跌造成亏损)
+#  市价：Market，卖一价*1.02买，买一价*0.98卖
+#  限价：Limit，只挂单不吃单，卖一价/买一价下单
+order_type: "Limit"
+
+# 跑够多少次停止，0表示不限制
+counts: 0
+
+# 跑够多少金额（买10刀，卖10刀，算20刀）停止，0表示不限制
+total: 0
+
+# 每次交易完成以后，等待的随机秒数, 脚本会在0-设置的数值之间，随机选择一个数等待,最少1s
+wait_second: 20
