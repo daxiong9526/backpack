@@ -25,6 +25,9 @@ https://backpack.exchange/refer/cfbd5a15-f9ce-481a-a323-0aaf5e51091f
 # 私信联系的较多，创建了1个交流群，我会不定时的编写比较火的项目脚本，有需要的可以加群
 ![Image1](imgs/wx.jpg)
 
+# 脚本下载链接
+https://github.com/daxiong9526/backpack/releases/tag/release1.0.0
+
 # 已知问题
 ## 1. win版本打开闪屏退出
 apikey和apisecret配置不正确，填写正确即可
