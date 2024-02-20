@@ -1,7 +1,7 @@
 # sol_usdc交易对
 
-api_key: "1hfiGFKUZE5MX9NjGkSFBjLKVR6vSh4UIswOLJfx6j0="
-api_secret: "0Ldf8bJKZF5BpQinPcyaf2bMDdEoI78Ln2CazRPanMs="
+api_key: "xxxxxxx"
+api_secret: "xxxxxxx"
 
 # 订单类型 (只针对买单，卖单统一走市价，防止持有sol下跌造成亏损)
 #  市价：Market，卖一价*1.02买，买一价*0.98卖

@@ -8,7 +8,6 @@ import (
 	"log"
 	"math"
 	"math/rand"
-	"os"
 	"strconv"
 	"time"
 
@@ -71,7 +70,7 @@ func (c *Config) generPrivateKey() ed25519.PrivateKey {
 		fmt.Println("API KEY 验证通过.")
 	} else {
 		fmt.Println("API KEY 验证不通过，请确认填写是否正确.")
-		os.Exit(0)
+		return nil
 	}
 
 	return privateKey
@@ -253,6 +252,9 @@ func main() {
 
 	var api client.Api
 	api.PrivateKey = config.generPrivateKey()
+	if api.PrivateKey == nil {
+		return
+	}
 	api.ApiKey = config.ApiKey
 	api.Symbol = "SOL_USDC"
 
